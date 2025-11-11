@@ -63,7 +63,7 @@ async def text_to_speech_edge(input_file, gender='female'):
     return output_file
 
 async def process_all_input_files_edge():
-    input_files = [f for f in os.listdir(input_dir) if f.endswith('song.txt')]
+    input_files = [f for f in os.listdir(input_dir) if f.endswith('test.txt')]
     
     if not input_files:
         print(f"No text files found in {input_dir} folder. Creating a sample...")
